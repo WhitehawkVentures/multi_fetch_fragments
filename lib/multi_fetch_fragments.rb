@@ -29,7 +29,7 @@ module MultiFetchFragments
 
           keys_to_collection_map[expanded_key] = item
 
-          puts(expanded_key)
+          Rails.logger.debug(expanded_key)
         end
 
         # cache.read_multi & cache.write interfaces may require mutable keys, ie. dalli 2.6.0
